@@ -1,18 +1,13 @@
 ---
 layout: page
 title: About
-permalink: /about/
+footer: true
+sharing: true
+comments: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am a Computer Engineer currently working on solving hardware assurance problems at [Graf Research](https://grafresearch.com). The projects I work on range from creating custom EDA tools in C++, full stack development of web-based tools in Java/JS, internal tooling work in Python, and FPGA design work across the four major vendors (including use of the open-source [F4FPGA](https://symbiflow.readthedocs.io/en/latest/) tools).
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Outside of work I take [pic](https://www.facebook.com/media/set/?set=a.2565947850170977&type=3)[tures](https://www.facebook.com/media/set/?set=a.3571782129587539&type=3) with my [Canon AE-1](https://en.wikipedia.org/wiki/Canon_AE-1), enjoy reading a good Sci-Fi book, and try to work on some hobby projects to keep things fresh.
 
 
-[jekyll-organization]: https://github.com/jekyll
