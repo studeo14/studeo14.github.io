@@ -16,39 +16,67 @@
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-url: "https://studeo14.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# in the
 title: Steven Frederiksen
-author: Steven J. Frederiksen
-email: vkabrich+website@gmail.com
-description:
-baseurl: "" # the subpath of your site, e.g. /blog
-domain: "studeo14.github.io"
-github_username:  studeo14
-date_format: "ordinal"
-color-scheme: auto
-show_excepts: true
+author:
+  name: Steven Frederiksen
+  email: vkabrich+website@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  Personal page for Steven Frederiksen describing personal projects and interests.
+show_excerpts: true # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    github:  studeo14
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    instagram: steven_jomama
+    linkedin: steven-☕-frederiksen-215a65117
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.markdown
+# - resume.html
 
 # Build settings
 theme: minima
+
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
 
 paginate: 6
-
-highlighter: rouge
-markdown: kramdown
-
-minima:
-  social_links:
-    github: studeo14
-    bitbucket: studeo14
-    linkedin: steven-☕-frederiksen-215a65117
-    instagram: steven_jomama
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,13 +87,13 @@ minima:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+ - .sass-cache/
+ - .jekyll-cache/
+ - gemfiles/
+ - Gemfile
+ - Gemfile.lock
+ - node_modules/
+ - vendor/bundle/
+ - vendor/cache/
+ - vendor/gems/
+ - vendor/ruby/

@@ -1,0 +1,176 @@
+---
+layout: page
+title: Resume
+footer: true
+---
+<div class="resume">
+<style type="text/css">
+    div.resume code{white-space: pre-wrap;}
+    div.resume span.smallcaps{font-variant: small-caps;}
+    div.resume span.underline{text-decoration: underline;}
+    div.resume div.column{display: inline-block; vertical-align: top; width: 50%;}
+</style>
+<style type="text/css">
+/*
+  * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+  *
+  * CSS for making a resume with pandoc. Inspired by moderncv.
+  *
+  * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+  * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+  */
+
+/* Whole document */
+div.resume {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Title of the resume */
+div.resume h1 {
+    font-size: 55px;
+    color: #757575;
+    text-align:center;
+    margin-bottom:15px;
+}
+/* h1:hover { */
+/*     background-color: #757575; */
+/*     color: #FFFFFF; */
+/*     text-shadow: 1px 1px 1px #333; */
+/* } */
+
+/* Titles of categories */
+div.resume h2 {
+    /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+    color: #397249;
+}
+/* There is a bar just before each category */
+div.resume h2:before {
+    content: "";
+    display: inline-block;
+    margin-right:1%;
+    width: 16%;
+    height: 10px;
+    /* This is called "rulecolor" in the ConTeXt stylesheet. */
+    background-color: #9CB770;
+}
+/* h2:hover { */
+/*     background-color: #397249; */
+/*     color: #FFFFFF; */
+/*     text-shadow: 1px 1px 1px #333; */
+/* } */
+
+/* Definitions */
+div.resume dt {
+    float: left;
+    clear: left;
+    width: 17%;
+    font-weight: bold;
+}
+div.resume dd {
+    margin-left: 17%;
+    margin-bottom:7px;
+}
+div.resume p {
+    margin-top:0;
+    margin-bottom:7px;
+}
+
+/* Blockquotes */
+div.resume blockquote {
+    text-align: center
+}
+
+/* Links */
+div.resume a {
+    text-decoration: none;
+    color: #397249;
+}
+div.resume a:hover, div.resume a:active {
+    background-color: #397249;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+/* Horizontal separators */
+div.resume hr {
+    color: #A6A6A6;
+}
+
+div.resume table {
+    width: 100%;
+}
+</style>
+<h2 id="education">Education</h2>
+<dl>
+<dt>2014-2018</dt>
+<dd><p><strong>B.S, Computer Engineering</strong>; Virginia Tech (Blacksburg)</p>
+<p><strong>Minor</strong>: Cybersecurity<br />
+<strong>Publications</strong>: “Automated assertion generation from natural language specifications,” Steven Frederiksen, John Aromando, and Michael S. Hsiao, in <em>Proceedings of the IEEE International Test Conference</em>, Nov., 2020.<br />
+<strong>Noteable Classes</strong>: Microcontroller Interfacing/Embedded Design, Digital Design I/II, Real Time Systems, MITRE 2018 eCTF, SoC Design, Wearable Computing</p>
+</dd>
+</dl>
+<h2 id="experience">Experience</h2>
+<p><strong>Research Engineer | Graf Research (2018-current)</strong></p>
+<ul>
+<li><p>Led development of Lattice-specific functionality for Graf Trace tool, which archives and verifies build artifacts throughout an FPGA build flow, enabling traceability and reproducibility of IP in bitstreeams.</p></li>
+<li><p>Led development of real-time, in-hardware testbench for custom IP utilizng Vivado System Generator and Vivado HLS for creation of generic interfaces, Simulink for simulation and test vector generation, and custom Microblaze and Python code for communication, synchronization, and real-time display of test-harness results.</p></li>
+<li><p>Modelling, simulation, and implementation of DSP algorithms in FPGAs.</p></li>
+<li><p>Transitioned M.S. research (see above) to product prototype with Graf DELV software. DELV translations Engloish specifications to System Verilog assertions for automatic verification of HDL.</p></li>
+<li><p>Led transtion to Vue.js and delopyment using Docker/Kubernetes for internal web-application product. Also performed full-stack development for the same project using Spring/Vue.</p></li>
+<li><p>Experience utilizing Python for internal tooling including: automated FPGA design instrumentation and testing, custom lab bench software, GUI and CLI application prototypes.</p></li>
+<li><p>Wrote and contributed to multiple winning Phase 1 and 2 SBIR proposals</p></li>
+<li><p>Kept up to date with state-of-the-art hardware trojan literature in service of SBIR contracts.</p></li>
+</ul>
+<p><strong>Publications</strong>: “DELV: Datasheet/English to Logic Verification,” Edward Carlisle, Steven Frederikson, Jonathan Graf, Scott Harper, John Aromando, and Michael S. Hsiao, in <em>Government Microcircuit Applications &amp; Critical Technology Conf.</em>, Mar. 2021.</p>
+<p><strong>Internships</strong></p>
+<p><strong>MITRE</strong> <em>2015,2016</em> | <strong>Parsons</strong> <em>2017</em> Full stack web development using Spring, React, and Angular for web-applications. Gained experience using Hadoop/Pig for large dataset processing.</p>
+<h2 id="technical-experience">Technical Experience</h2>
+<dl>
+<dt>Rust Ray Tracer</dt>
+<dd><p><a href="https://github.com/studeo14/Ray-Tracing" target="_blank">link</a>. Implemented the “Ray Tracing in a Weekend” book in Rust.</p>
+<ul>
+<li>Implement a ray tracer to render a scene with multiple material types.</li>
+<li>Improve upon the original object model with Rust traits and module organization.</li>
+<li>Multi-threading using the threadpool crate on a per-pixel basis.</li>
+<li>Linear animation of any object in the scene (including camera) using an Iterator-based design to facilitate composition of mutliple animations and automatic history of object states.</li>
+</ul>
+</dd>
+<dt>Rust ROBDD Equivalence Tool</dt>
+<dd><a href="https://bitbucket.org/studeo14/robdd-equivalence" target="_blank">link</a>. Implementation of a Reduced Order Binary Decision Diagram equivalence tool in Rust. This was implemented for an advanced EDA tool class. It includes an arbitray complexity binary expression parser and a ROBDD utility library to reduce the expression to a normalized state. With this tool you can input two binary expression and determine if they are functionally equivalent via ROBDD reduction. There is a Python expression generation utility included to aid in complex test case generation.
+</dd>
+<dt>Rust TTSA</dt>
+<dd><a href="https://bitbucket.org/studeo14/simulated-annealing-ttsa" target="_blank">link</a>. Implementation of the <a href="https://www.researchgate.net/publication/220813632_A_Simulated_Annealing_Approach_to_the_Travelling_Tournament_Problem" target="_blank">TTSA</a> algorithm using Rust. This implementation included the cost matricies, scheduling, and simulated annealing functions for TTSA. It also includes unit tests for each of the library functions utilized in the main TTSA loop.
+</dd>
+<dt>Programming Languages</dt>
+<dd><strong>Java:</strong> Professional experience using Java to implement modern web applications as well as high-performance natural langugage processing engines.
+</dd>
+<dd><p><strong>C/C++/HLS:</strong> Professional experience in implementing EDA tools and real-time microcontroller code. Experience using C++ with Vivado HLS to generate custom IP cores.</p>
+</dd>
+<dd><p><strong>Verilog</strong> Professional and personal experience in implementing custom IP cores in verilog. Verification and simulation of these cores is done using both System Verilog Assertions and Verilator.</p>
+</dd>
+<dd><p><strong>MATLAB/Simulink</strong> Experience modelling, simlating, and verifying DSP pipelines as well as transitioning models to hardware designs.</p>
+</dd>
+<dd><p><strong>Python</strong> Experience utiling Python to implement protype GUI and CLI application, custom automation tools, and web applications.</p>
+</dd>
+<dd><p><strong>Rust</strong> (See above projects) Proficient with Rust in a non-professional setting.</p>
+</dd>
+<dd><p>Intermediate knowledge of <strong>lisp</strong>, <strong>LTL</strong>, <strong>SVA</strong>, <strong>Docker/Kubernetes</strong></p>
+</dd>
+</dl>
+<h2 id="technical-writing">Technical Writing</h2>
+<ul>
+<li><p>Experience writing thorough technical documentation and reports desribing research objectives, implementation details, and results.</p></li>
+<li><p>Experience writing and contributing to formal journal publications.</p></li>
+<li><p>Experience contributing to patent applications.</p></li>
+</ul>
+<hr />
+<blockquote>
+<p><a href="mailto:vkabrich@gmail.com" class="email">vkabrich@gmail.com</a> • (540) 809-5804 • 26 years old<br />
+Blacksburg, VA</p>
+</blockquote>
+</div>
